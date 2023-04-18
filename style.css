@@ -1,0 +1,118 @@
+#home_page{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*quebra linhas se necessário */
+    justify-content: center;
+    gap:10px;/*Espaço entre colunas */
+    width:100%;
+    height:auto;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*GERAIS */
+.botoes{
+    background-color: rgb(73, 173, 255);
+    border:none;
+    border-radius: 10px;
+}
+.titulos{
+    font-size: 30px;
+    font-weight: bold;
+}
+/*MENU*/
+#menu{
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    max-height:700px;
+    background-color:rgb(230, 230, 230);
+    border-radius: 20px;
+    padding:30px;
+}
+.menu_nsei{
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+}
+#mostrar_usuario{
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+}
+#bt_sair{
+    width: 250px;
+    height:50px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+.menu_mostrar{
+    display: none;
+    position:relative;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border: 2px solid rgb(73, 173, 255);
+    border-radius: 20px;
+}
+
+#bt_lista_de_notas{
+    width: 250px;
+    height:50px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+.link_nota{
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+}
+.link_nota:hover{
+    color:rgb(73, 173, 255);
+}
+#bt_lista_de_notas:hover .menu_mostrar{
+    display: block;
+}
+
+
+/*HOME PAGE PRINICPAL */
+#principal{
+    width:600px;
+    max-height:700px;
+    background-color:rgb(230, 230, 230);
+    border-radius: 20px;
+    padding:30px;
+}
+#h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.info{
+    font-size:20px;
+    font-weight: bold;
+}
+#form_nv_nota{
+    margin:10px;
+}
+#campo_titulo{
+    background-color: transparent;
+    width:100%;
+}
+#campo_nota{
+    background-color: transparent;
+    width:100%;
+}
+#bt-notas-salvas{
+    width:100%;
+}
+#bt_salvar_nota, #bt_limpar_campos{
+    width:100%;
+    height: 30px;
+    margin: 10px;
+}
+/*MOSTRAR NOTAS SALVAS*/
